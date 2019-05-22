@@ -1,8 +1,102 @@
-<h1>안녕하세요 여기서 글자를 세세요.!</h1>
-<a href="{%url 'about'%}">About</a>
 
-<form action="{%url 'result'%}">
-<textarea row="160" cols="30" name="fulltext"></textarea>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>wordcount </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+            <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/cover/">
+            
+            <!-- Bootstrap core CSS -->
+            <link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        
+</head>
+<style>
+    body{
+        margin:0;
+        padding:0;
+        justify-content: flex;   
+        background-image:url(https://wallpapersite.com/images/pages/pic_w/17631.jpg);
+ 
+ 
+  }
+  h1{
+      text-align:center;
+  }
+  .cover-container
+  { 
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        
+      }
+     .masthead-brand{
+        text-align: center;
+        font-weight:600px;
+        font-family: sans-serif;
+        font-size:50px;
+        color:white;
+        
+     }
+    
+.input{
+     text-align: center;
+}
+   a{
+       color:white;
+   }
+  h1:hover, a:hover{
+       color:red;
+   }
+
+    .container{
+    color:white;
+  
+    width:600px;
+    height:200px;
+    }
+    input:hover{
+color:black;
+background-color: green;
+    }
+</style>
+<body>
+    <div class="cover-container">
+        <header class="masthead mb-auto">
+            <div class="inner">
+                <h3 class="masthead-brand">WordCount</h3>
+                <nav class="nav nav-masthead justify-content-left">
+                    <a class="nav-link active" href="{%url 'home'%}">Home</a>
+                    <a class="nav-link active" href="{%url 'about'%}">About</a>
+                   
+                </nav>
+            </div>
+        </header></div>
+
+<div class="container">
+<h1>안녕하세요 여기서 글자를 세세요.</h1>
+
+<form class="input" action="{%url 'result'%}">
+<textarea class="input-1" row="760" cols="40" name="fulltext"></textarea>
 <br>
-<input type="submit" value="count">
+<div class="input-2">
+<input type="submit" value="count"></div>
 </form>
+</div>
+</body>
+</html>
